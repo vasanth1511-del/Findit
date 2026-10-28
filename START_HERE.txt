@@ -1,0 +1,18 @@
+FindIt | Start here
+
+Recommended: double-click run-findit.bat. It opens the laptop-first dashboard on your computer and serves the four pages from one local address so navigation and saved data work together. Keep the server window open while using FindIt; press Ctrl+C in that window to stop it. This needs Python 3 installed.
+
+Pages
+- index.html: overview dashboard
+- checklist.html: checklist, checkboxes, and photo attachments
+- routines.html: campus, exam, and lab starter lists
+- leave.html: leave mode (one item at a time, confetti, streak)
+- lostfound.html: campus lost & found board with match detection
+- extras.css and extras.js: dark mode, weekly streak, new pages
+- guide.html: project explanation for a presentation
+- app.css and app.js: shared design and behavior
+
+Your checklist and resized photos stay in this browser on this device. There is no login or cloud sync.
+
+Presentation summary
+FindIt helps students avoid forgetting everyday items before leaving home. Students can create a personal checklist, attach photos to reminders, and check things off while packing. The browser remembers the list for the next visit.

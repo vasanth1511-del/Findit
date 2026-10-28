@@ -1,0 +1,20 @@
+/* FindIt extras: dark mode, week streak, leave mode, lost & found board */
+.theme-btn{margin-left:12px;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--paper);color:var(--green);font-size:16px}
+.wide{grid-column:1/-1}.week{display:flex;gap:10px;align-items:flex-end;height:110px}.day{flex:1;display:grid;gap:6px;text-align:center;color:var(--muted);font-size:10px}
+.day .bar{height:70px;border-radius:9px;background:var(--pale);position:relative;overflow:hidden}.day .bar:after{content:"";position:absolute;inset:auto 0 0;height:0;background:var(--green);transition:height .5s}.day.on .bar:after{height:100%}
+.leave-panel{max-width:560px;margin:0 auto;padding:28px;text-align:center}.leave-meta{margin-bottom:10px;font-size:12px;font-weight:700;color:var(--green)}
+.leave-card{margin:26px 0 20px;padding:26px 18px;border-radius:18px;background:var(--pale);animation:pop .35s}.leave-card h2{margin:14px 0 6px;font:500 30px Georgia,serif}
+.leave-photo{display:grid;place-items:center;width:150px;height:150px;margin:0 auto;overflow:hidden;border-radius:26px;background:var(--paper);color:var(--green);font:600 54px Georgia,serif;box-shadow:var(--shadow)}.leave-photo img{width:100%;height:100%;object-fit:cover}
+.leave-actions{display:flex;gap:10px;justify-content:center}.leave-actions .btn{min-height:48px;padding:0 22px;font-size:13px}.kbd{font-size:11px;margin-top:16px}
+.confetti{position:fixed;inset:0;pointer-events:none;z-index:20}@keyframes pop{from{transform:scale(.94);opacity:0}to{transform:none;opacity:1}}
+.lf-grid{grid-template-columns:minmax(260px,.7fr) minmax(0,1.5fr);align-items:start}.lf-form{padding:22px;display:grid;gap:10px}.lf-form h2{margin:0 0 4px;font-size:15px}
+select.field{appearance:auto}.chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}.chip{padding:7px 14px;border:1px solid var(--line);border-radius:99px;background:var(--paper);font-size:12px;font-weight:650}.chip.active{background:var(--green);color:#fff;border-color:var(--green)}
+.lf-list{display:grid;gap:12px}.lf-card{display:grid;grid-template-columns:78px minmax(0,1fr) auto;gap:14px;align-items:center;padding:14px}.lf-photo{display:grid;place-items:center;width:78px;height:78px;overflow:hidden;border-radius:14px;background:var(--pale);color:var(--green);font:600 28px Georgia,serif}.lf-photo img{width:100%;height:100%;object-fit:cover}
+.lf-body h3{margin:6px 0 3px;font-size:15px}.lf-body p{margin:0;font-size:12px}.lf-top{display:flex;gap:10px;align-items:center}.tag.lf-lost{background:#fde8e5;color:#a3382d}.tag.lf-found{background:#e1f3e6;color:#24663f}
+.lf-match{margin-top:8px;padding:6px 10px;border-radius:8px;background:#fff4d6;color:#7a5a07;font-size:11px;font-weight:650}.lf-actions{display:grid;gap:6px}
+:root[data-theme=dark]{color-scheme:dark;--ink:#e6ede7;--muted:#9aa69d;--green:#6fcf9b;--pale:#1f2c24;--line:#2b372f;--paper:#19211c;--shadow:0 14px 45px #0006;color:var(--ink);background:#111613}
+[data-theme=dark] .sidebar{background:#151b17}[data-theme=dark] .field,[data-theme=dark] .btn.secondary,[data-theme=dark] .user-chip,[data-theme=dark] .item-photo{background:#202b24;color:var(--ink)}
+[data-theme=dark] .btn.primary,[data-theme=dark] .brand-icon,[data-theme=dark] .chip.active{color:#0c1a12}[data-theme=dark] .nav a:hover,[data-theme=dark] .nav a.active,[data-theme=dark] .privacy-note,[data-theme=dark] .avatar{background:#223028;color:var(--green)}
+[data-theme=dark] .hero-card{background:linear-gradient(135deg,#1d2b23,#18221c)}[data-theme=dark] .callout{background:#1d2a22;color:var(--ink)}[data-theme=dark] .lf-match{background:#3a3114;color:#f3d77a}
+@media(max-width:900px){.lf-grid{grid-template-columns:1fr}.lf-card{grid-template-columns:64px 1fr}.lf-actions{grid-column:1/-1;display:flex}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
